@@ -1,7 +1,8 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../db/client-sequelize');
 
-class Quiz extends Model {}
+class Quiz extends Model {
+}
 
 Quiz.init({
   title: {

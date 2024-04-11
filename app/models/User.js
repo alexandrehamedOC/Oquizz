@@ -1,7 +1,11 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../db/client-sequelize');
 
-class User extends Model {}
+class User extends Model {
+  get fullname() {
+    return `${this.firstname} ${this.lastname}`
+  }
+}
 
 User.init({
   firstname: {
