@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<main class="container py-4">
+  Page des niveaux
+
+  <ul class="list-group mb-4">
+    <% levels.forEach(level => { %>
+      <li class="list-group-item"><%= level.name %></li>
+    <% }) %>
+  </ul>
+
+  <form class="mb-5" method="POST" action="/levels">
+    <label class="form-label" for="name">Nom du niveau</label>
+    <input class="form-control" type="text" name="name" id="name" required>
+    <button type="submit" class="btn btn-primary mt-3">Ajouter le niveau</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>
