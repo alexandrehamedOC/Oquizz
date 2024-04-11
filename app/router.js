@@ -22,5 +22,6 @@ router.get('/tags', tagController.list)
 // Authentification
 router.get('/login', authController.loginPage)
 router.get('/signup', authController.signupPage)
+router.post('/signup', authController.signupAction)
 
 module.exports = router;
