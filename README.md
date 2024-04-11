@@ -28,9 +28,11 @@ Coder la méthode correspondante dans un nouveau controlleur (`quizController`).
 
 Ici aussi, Sequelize va être bien pratique...
 
-1. pouvoir visualiser la difficulté de chaque question
+1. pouvoir visualiser toutes les questions
+ 
+2. pouvoir visualiser la difficulté de chaque question
 
-2. visualiser tous les sujets rattachés au quiz
+3. visualiser tous les sujets rattachés au quiz
 
 ### pouvoir visualiser tous les sujets
 

@@ -1,9 +1,5 @@
 const { Quiz } = require("../models");
 
-function display(data) {
-  return JSON.stringify(data, null, 2);
-}
-
 const mainController = {
   async index(req, res) {
     // Recuperer la liste de tous les quiz
