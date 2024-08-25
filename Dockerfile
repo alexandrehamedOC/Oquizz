@@ -10,7 +10,6 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-COPY .env ./
 
 
 # Expose le port que l'application va utiliser
