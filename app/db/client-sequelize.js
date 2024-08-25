@@ -8,6 +8,12 @@ const sequelize = new Sequelize(process.env.PG_URL, {
     // Moi je souhaite utiliser le snake_case
     underscored: true,
   },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false, // Désactiver la vérification du certificat si nécessaire
+    },
+  },
 });
 
 module.exports = sequelize;
